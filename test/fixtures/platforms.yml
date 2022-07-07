@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  os: MyString
+  chipset: MyString
+  cpu: MyString
+  gpu: MyString
+  device_id: 1
+
+two:
+  os: MyString
+  chipset: MyString
+  cpu: MyString
+  gpu: MyString
+  device_id: 1

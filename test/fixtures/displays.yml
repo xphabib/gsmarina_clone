@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  size: MyString
+  resolution: MyString
+  protection: MyString
+  device_id: 1
+
+two:
+  type: 
+  size: MyString
+  resolution: MyString
+  protection: MyString
+  device_id: 1

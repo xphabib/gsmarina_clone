@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  card_slot: MyString
+  internal: MyString
+  other: MyString
+  device_id: 1
+
+two:
+  card_slot: MyString
+  internal: MyString
+  other: MyString
+  device_id: 1

@@ -1,0 +1,24 @@
+<%= image_tag @device.image_url %>
+<p>
+  title: <%= @device.title %>
+</p>
+
+<p>
+  name: <%= @device.name %>
+</p>
+
+<p>
+  brand: <%= @device.brand.name %>
+</p>
+
+<% @device.technologies.each do |technology| %>
+  <table border="1px solid black">
+    <th><%= technology.name %></th>
+    <% technology.kvfeatures.each do |feature| %>
+      <tr>
+        <td><%= feature.key %>: <%= feature.value %></td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>
+

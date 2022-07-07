@@ -1,0 +1,48 @@
+<%#= @devices.count %>
+<%# @devices.each do |device| %>
+<!--  ========-->
+<!--  <p>-->
+<%#= device.title %>
+<!--  </p>-->
+<!--    <p>-->
+<%#= device.name %>
+<!--  </p>-->
+<!--    <p>-->
+<%#= device.image_url %>
+<!--  </p>-->
+<!--    <p>-->
+<%#= device.link %>
+<!--  </p>-->
+
+<%# end %>
+
+<%#= image_tag device.image_url %>
+
+
+<% @devices.each_with_index do |device, index| %>
+  <p>====================</p>
+  <%= index+1 %>
+  <p>====================</p>
+  <p>
+    title: <%= device.title %>
+  </p>
+
+  <p>
+    name: <%= device.name %>
+  </p>
+
+  <p>
+    brand: <%= device.brand.name %>
+  </p>
+
+  <% device.technologies.each do |technology| %>
+    <table border="1px solid black">
+      <th><%= technology.name %></th>
+      <% technology.kvfeatures.each do |feature| %>
+        <tr>
+          <td><%= feature.key %>: <%= feature.value %></td>
+        </tr>
+      <% end %>
+    </table>
+  <% end %>
+<% end %>
